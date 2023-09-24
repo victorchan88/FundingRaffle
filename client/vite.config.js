@@ -8,4 +8,12 @@ export default defineConfig({
   define: {
     "process.env": {},
   },
+  resolve: {
+    alias: [
+      {
+        find: 'web3',
+        replacement: 'web3/dist/web3.min.js',
+      },
+    ],
+  },
 });
